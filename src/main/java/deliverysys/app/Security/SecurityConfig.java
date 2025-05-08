@@ -45,7 +45,7 @@ public class SecurityConfig {
         if ("prod".equals(activeProfile)) {
             http.authorizeHttpRequests(auth -> auth
 
-            .requestMatchers("/", "/index.html", "/static/**", "/assets/**", "/favicon.ico", "/login", "/dashboard", "/orders", "/assignments", "/delivery-persons").permitAll()
+            .requestMatchers("/", "/index.html", "/static/**", "/assets/**", "/favicon.ico", "/login", "/dashboard", "/orders", "/assignments", "/delivery-persons", "/health").permitAll()
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/api/orders").permitAll()
                 .requestMatchers("/api/orders/**").hasAnyRole("ADMIN", "DELIVERY_PERSON", "CLIENT")
