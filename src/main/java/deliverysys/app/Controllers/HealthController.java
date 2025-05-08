@@ -13,7 +13,5 @@ public String ping() {
 
     System.out.println("🩺 Health endpoint called");
     return "OK";
-}
-
-}
+}}
 
