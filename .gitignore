@@ -1,0 +1,27 @@
+# Ignore everything in target/ and all JARs
+target/
+*.jar
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.idea
+*.iws
+*.iml
+*.ipr
+.vscode/
+.nb-gradle/
+nbbuild/
+nbproject/
+
+# Don't include dist (built in Docker)
+frontend/dist/
+frontend/dist/**/*
